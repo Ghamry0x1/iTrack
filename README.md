@@ -1,7 +1,10 @@
 # iTrack
-
-## Introduction
 This is a simple web application for tracking mobile phones via a various number of android service installed on the devices that runs in the background. Implemented for CSE334 Internet Programming Course.
+
+## Table of Contents
+**[Technologies Used](#technologies-used)**<br>
+**[Mockups](#mockups)**<br>
+**[Scenarios and Use Cases](#scenarios-and-use-cases)**<br>
 
 ## Technologies Used
 - [**HTML**](https://en.wikipedia.org/wiki/HTML): Hypertext Markup Language is the standard markup language for creating web pages and web applications.
