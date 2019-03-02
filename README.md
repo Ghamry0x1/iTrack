@@ -58,7 +58,9 @@ This is a simple web application for tracking mobile phones via a various number
         
 
 ### Register
-// form, emailing the service, hashing pass
+The Signup/Register form will appear to the user who will have to enter the necessary fields: Name, Password, Email ID, Mobile Phone Number.
+The password field will be hashed by the PHP crypto method and then all the fields will be saved in the database as a record for this user.
+This will be followed by receiving a mail including the android service.
 ![sequence-diagram](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
 
 ### Login
