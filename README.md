@@ -3,7 +3,6 @@ This is a simple web application for tracking mobile phones via a various number
 
 ## Table of Contents
 **[Technologies Used](#technologies-used)**<br>
-**[Mockups](#mockups)**<br>
 **[Scenarios and Use Cases](#scenarios-and-use-cases)**<br>
 **[Contributors](#contributors)**<br>
 
@@ -18,25 +17,8 @@ This is a simple web application for tracking mobile phones via a various number
 - [**Google Maps API**](https://developers.google.com/maps/documentation/): Google APIs is a set of application programming interfaces developed by Google which allow communication with Google Services and their integration to other services.
 - [**Android Geo Location Service**](http://to.be.deployed): A simple service that runs in the background on the users's android phone, that keeps sending his geo location periodically.
 
-## Mockups
-### Home
-![home](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
-
-### About
-![about](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
-
-### Login
-![login](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
-
-### Register
-![register](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
-
-### App
-![app](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
-
-
 ## Scenarios and Use Cases
-![use-case-diagram](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
+![use-case-diagram](https://user-images.githubusercontent.com/25902120/54239921-4aa5d800-4525-11e9-934a-d4dfb02f3522.jpeg)
 
 ### Routing
 // web app wireframe
@@ -61,14 +43,14 @@ This is a simple web application for tracking mobile phones via a various number
 The Signup/Register form will appear to the user who will have to enter the necessary fields: Name, Password, Email ID, Mobile Phone Number.<br>
 The password field will be hashed by the PHP crypto method and then all the fields will be saved in the database as a record for this user.<br>
 This will be followed by receiving a mail including the android service.<br>
-![sequence-diagram](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
+![sequence-diagram](https://user-images.githubusercontent.com/25902120/54239924-4b3e6e80-4525-11e9-81ac-60039cef796d.jpeg)
 
 ### Login
 // hash compare
 
 ### Database
 // service keep sending to db, frontend requests, backend calls the db, db responds, backend responds
-![db-schema](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
+![db-schema](https://user-images.githubusercontent.com/25902120/54239922-4b3e6e80-4525-11e9-8865-4d3060da13cb.jpeg)
 
 ## Contributors
 [**Mohamed El Ghamry**](https://github.com/Ghamry0x1)<br>
