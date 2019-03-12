@@ -54,6 +54,6 @@ This will be followed by receiving a mail including the android service.<br>
 
 ## Contributors
 [**Mohamed El Ghamry**](https://github.com/Ghamry0x1)<br>
-[**Youssed Kembal**](https://github.com/Ghamry0x1)<br>
+[**Youssed Kembal**](https://github.com/YKembal)<br>
 [**Mostafa Hazem**](https://github.com/mostafa172)<br>
 [**Mohamed Hussien**](https://github.com/mohamedhussein98)<br>
