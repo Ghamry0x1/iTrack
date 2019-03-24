@@ -1,5 +1,5 @@
 # iTrack
-This is a simple web application for tracking mobile phones via a various number of android service installed on the devices that runs in the background. Implemented for CSE334 Internet Programming Course.
+This is a simple user-friendly web application for tracking mobile phones via a various number of android service installed on the devices that runs in the background. We have 2 packages; Personal-use package that supports only 1 mobile phone tracking and it's free, Commercial-use package that supports up to 10 mobile phones tracking. Implemented for CSE334 Internet Programming Course.
 
 ## Table of Contents
 **[Technologies Used](#technologies-used)**<br>
@@ -21,24 +21,14 @@ This is a simple web application for tracking mobile phones via a various number
 ![use-case-diagram](https://user-images.githubusercontent.com/25902120/54239921-4aa5d800-4525-11e9-934a-d4dfb02f3522.jpeg)
 
 ### Routing
-// web app wireframe
-// Home (landing page)
-// About (about us page)
-// App
-    if(!session)
-        // login
-        getUserDataFromDB
-        if(user)
-            if(passwordMatch)
-                logged in
-                redirect to app
-            else
-                // forgot password feature coming later
-    else
-        regitser
-        redirect to login
-        
+The very start page that the user will face when launching the web application is the landing page (index.html).
+There will be a navigation bar that contains 3 links:
+- *Home:* Navigates the user to the home page (index.html). 
+- *About*: Navigates the user to the about page (about.html) which contains more info and social links of the developing team. 
+- *App*: Navigates the user to login/registration page(s). If the user logins' successfully, he will be redirected automatically to the App page (app.html). If not; the login and registartion scenarios proceed.
 
+If user navigates to any page after login, and go back again to the App; no login will be required because a session for this user will be instantiated.
+        
 ### Register
 The Signup/Register form will appear to the user who will have to enter the necessary fields: Name, Password, Email ID, Mobile Phone Number.<br>
 The password field will be hashed by the PHP crypto method and then all the fields will be saved in the database as a record for this user.<br>
@@ -46,7 +36,15 @@ This will be followed by receiving a mail including the android service.<br>
 ![sequence-diagram](https://user-images.githubusercontent.com/25902120/54239924-4b3e6e80-4525-11e9-81ac-60039cef796d.jpeg)
 
 ### Login
-// hash compare
+1. The user will enter his username and password and then press Login.
+2. The form will be submitted and send to our server.
+3. The server will get user using his username from the database.
+	- If the user exists, the server will continue with step 4.
+	- If user does not exist, an error message will be shown for the user, and he will be promoted to try to enter his credentials again or to register.
+4. The server will hash the form password using an irreversible hashing function.
+5. The server will compare the hashed user password saved in the database with the hashed form password.
+	- If matches, the login will be successful, and the user will have access.
+	- If does not matches, then an error message will show up telling the user that the entered password was not correct and to retry.
 
 ### Database
 // service keep sending to db, frontend requests, backend calls the db, db responds, backend responds
