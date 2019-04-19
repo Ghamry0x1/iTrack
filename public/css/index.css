@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+.align-center {
+    text-align: center;
+}
+
+
+/*p {
+    margin: 0 0 2rem 0;
+}*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+h3 {
+    font-family: "Pt Serif", serif;
+    color: #202B36;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.top-block {
+    color: white;
+    background-image: url(../img/bg.jpg);
+    /* background-color: rgb(238, 62, 31);*/
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    padding: 6rem 0 4rem 0;
+    margin: 0 auto;
+}
+
+.top-block p {
+    text-transform: uppercase;
+    font-size: .80rem;
+    font-weight: 500;
+    margin: 0 0 .5rem 0;
+    padding: 0 0 1rem 0;
+    letter-spacing: .25rem;
+    color: #cfc8c8;
+}
+
+.top-block p:after {
+    content: '';
+    position: absolute;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.body-left-box {
+    position: relative;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    width: 30%;
+    /*border: 1px solid black;*/
+}
+
+.body-left-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 20px 20px 7px #E3E7EB;
+    mix-blend-mode: multiply;
+}
+
+.body-left-title {
+    border-bottom: 1px solid black;
+}
+
+.body-right-box {
+    position: relative;
+    margin: 1%;
+    padding-left: 8%;
+    float: left;
+    width: 50%;
+}
+
+.features {
+    margin: 5%;
+    padding: 5%;
+}
+
+.bottom-box-features-list {
+    justify-content: center;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.box {
+    /*box-sizing: border-box;*/
+    position: relative;
+    margin: 2%;
+    padding: 2%;
+    float: left;
+    width: 20%;
+    text-align: center;
+    border: 10px solid white;
+}
+
+.box-paragraph {}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 20px 20px 7px #E3E7EB;
+    mix-blend-mode: multiply;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 1000;
+}
+
+footer {
+    overflow: auto;
+    width: 100%;
+}
