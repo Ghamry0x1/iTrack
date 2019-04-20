@@ -9,16 +9,7 @@
     padding-top:10px;
     margin-right:0px;
     padding-right:0px;
-}
-.nav_Bar_Title{
-    background-color:#FF4B2B;
-    height:20px;
-    padding:10px;
-}
-.nav_Bar_Title a {
-    color: white;
-    text-decoration:none;
-    margin-left:50px;
+    margin-bottom:0px;
 }
 .nav_Bar_All{
     float:left;
@@ -43,6 +34,9 @@
 .nav_List li:hover{
     background-color:#FF4B2B;
 }
+.nav_List li:active {
+    color:white;
+}
 .profile_info{
     margin-left:5px;
 }
@@ -50,15 +44,14 @@
     background-color:#d3d3d3;
 }
 .outer {
-    padding-left: 100px;
+    padding-right:30px;
+    padding-left: 220px;
     padding-top:20px;
+    padding-bottom:20px;
     background-color: #d3d3d3;
-    padding-right:20px;
-    margin-right:0px;
 }
-.container{
+.inner{
     background-color:white;
-
 }
 #img1{
     margin:10px;
