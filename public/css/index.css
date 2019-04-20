@@ -42,6 +42,7 @@ h3 {
 
 .first-block {
     height: 400px;
+    margin-top: 40px;
 }
 
 .body-left-box {
@@ -86,9 +87,11 @@ h3 {
 }
 
 .block-line {
+    clear: both;
     width: 50%;
     color: grey;
     height: 1px;
+    align-content: center;
 }
 
 .get-started-button {
@@ -122,6 +125,7 @@ h3 {
     margin: 2%;
     padding: 2%;
     width: 20%;
+    z-index: -1;
     text-align: center;
     border: 10px solid white;
 }
@@ -162,7 +166,9 @@ footer {
     position: relative;
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 50px;
     padding: 6%;
+    z-index: -1;
     height: 200px;
     width: 30%;
     text-align: center;
