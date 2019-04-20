@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iTrack - Dashboard</title>
+    <link rel="shortcut icon" type="image/png" href="../img/icon.png" />
+    <link rel="stylesheet" href="../css/dashBoard.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../../resources/library/jquery-3.4.0.min.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="main_Body_Container">
+        <div class="page_Content">
+            <!--Page Content start-->
+
+
+        <div class="nav_Bar_All">
+            <!--Nav Bar Start-->
+
+
+            <div class="nav_Bar_Title">
+                <a href="index.html"><img class="logo" src="../img/ll2.png"></a><a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <div class="nav_Bar">
+
+                <div class="profile_info">
+                    <br />
+                    <span>Welcome,</span>
+                    <h2>(UserName)</h2>
+                </div>
+
+                <br />
+
+                <div class="nav_Selection">
+                    <h3>GENERAL</h3>
+                    <ul class="nav_List">
+                        <li>
+                            <a class="nav-item"><i class="fa fa-map"></i> Map<!--<span class="fa fa-chevron-down"></span>--></a>
+                        </li>
+                        <li>
+                            <a class="nav-item"><i class="fa fa-truck"></i> Logs </a>
+
+                        </li>
+                        <li>
+                            <a class="nav-item"><i class="fa fa-desktop"></i> UI Elements</a>
+
+                        </li>
+                        <li>
+                            <a class="nav-item"><i class="fa fa-table"></i> Tables</a>
+
+                        </li>
+                        <li>
+                            <a class="nav-item"><i class="fa fa-bar-chart-o"></i> Data Presentation </a>
+
+                        </li>
+                    </ul>
+
+                    <h3>LIVE ON</h3>
+                    <ul class="nav_List">
+                        <li>
+                            <a class="nav-item"><i class="fa fa-bug"></i> Additional Pages </a>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div> <!--Nav Bar End-->
+
+
+        <div class="outer">
+
+            <div class="container">
+
+                <img src="../img/Google-Maps.jpg" id="img1" />
+
+            </div>
+
+        </div>
+
+
+
+    </div><!--Page Content end-->
+    <div class="clearfix"></div>
+    </div>
+    
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- LOAD NAVBAR AND FOOTER -->
+    <script>$(() => $('#navbar-placeholder').load('../html/navbar.html'));</script>
+    <script>$(() => $('#footer-placeholder').load('../html/footer.html'));</script>
+</body>
+</html>
