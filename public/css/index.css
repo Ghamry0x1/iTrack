@@ -23,6 +23,7 @@ h6 {
 
 h2 {
     font-size: 1.75rem;
+    margin: 2.5rem 0 0.5rem 0;
 }
 
 body {
@@ -41,21 +42,19 @@ h3 {
 
 .top-block {
     color: white;
-    background-image: url(../img/bg.jpg);
-    /* background-color: rgb(238, 62, 31);*/
+    /*background-image: url(../img/bg.jpg);*/
+    background-color: #FF4B2B;
     background-attachment: fixed;
     background-position: center;
     position: relative;
-    padding: 6rem 0 4rem 0;
-    margin: 0 auto;
+    padding: 4rem 0 2rem 0;
 }
 
 .top-block p {
     text-transform: uppercase;
     font-size: .80rem;
     font-weight: 500;
-    margin: 0 0 .5rem 0;
-    padding: 0 0 1rem 0;
+    padding: 1rem 0 0 0;
     letter-spacing: .25rem;
     color: #cfc8c8;
 }
@@ -73,6 +72,18 @@ h3 {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.get-started-button {
+    color: #fff;
+    background-color: #000;
+    display: inline-block;
+    border: none;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-size: 18px;
+}
+
 .body-left-box {
     position: relative;
     margin: 1%;
@@ -82,7 +93,8 @@ h3 {
     /*border: 1px solid black;*/
 }
 
-.body-left-box::before {
+
+/*.body-left-box::before {
     content: '';
     position: absolute;
     top: 0;
@@ -90,8 +102,8 @@ h3 {
     bottom: 0;
     left: 0;
     box-shadow: 0px 20px 20px 7px #E3E7EB;
-    mix-blend-mode: multiply;
-}
+   mix-blend-mode: multiply;
+}*/
 
 .body-left-title {
     border-bottom: 1px solid black;
@@ -99,8 +111,11 @@ h3 {
 
 .body-right-box {
     position: relative;
-    margin: 1%;
-    padding-left: 8%;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+    margin-top: 3%;
     float: left;
     width: 50%;
 }
@@ -108,6 +123,7 @@ h3 {
 .features {
     margin: 5%;
     padding: 5%;
+    text-align: center;
 }
 
 .bottom-box-features-list {
@@ -116,7 +132,7 @@ h3 {
     margin-left: -12px;
 }
 
-.box {
+.features-box {
     /*box-sizing: border-box;*/
     position: relative;
     margin: 2%;
@@ -127,9 +143,7 @@ h3 {
     border: 10px solid white;
 }
 
-.box-paragraph {}
-
-.box::before {
+.features-box::before {
     content: '';
     position: absolute;
     top: 0;
@@ -148,4 +162,61 @@ h4 {
 footer {
     overflow: auto;
     width: 100%;
+}
+
+.features-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 20px 20px 7px #E3E7EB;
+    mix-blend-mode: multiply;
+}
+
+.bottom-box-pricing-list {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricing-box {
+    /*box-sizing: border-box;*/
+    position: relative;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 6%;
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 10px solid white;
+}
+
+.pricing-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 20px 20px 7px #E3E7EB;
+    mix-blend-mode: multiply;
+}
+
+.pricing-box-title {
+    color: #FF4B2B;
+    font-size: 1.75rem;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+ul.pricing-list {
+    list-style-image: url('../img/greenTick.png');
 }
