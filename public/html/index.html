@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,22 +7,15 @@
     <link rel="shortcut icon" type="image/png" href="../img/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/index.css">
-
-    <!--HEADER NAV BAR IS HERE-->
-    <div id="top">
-        <img src="../img/icon.png" width="50" height="50" alt="Application Logo" title="dummy application logo">
-        <a href="index.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="#app">App</a>
-
-    </div>
-
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../../resources/library/jquery-3.4.0.min.js"></script>
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <!-- NAVBAR -->
+    <div id="navbar-placeholder"></div>
+
     <div class="first-block">
         <div class="body-left-box">
             <h1 class="body-left-title">iTrack</h1>
@@ -104,11 +91,11 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- LOAD NAVBAR AND FOOTER -->
+    <script>$(() => $('#navbar-placeholder').load('../html/navbar.html'));</script>
+    <script>$(() => $('#footer-placeholder').load('../html/footer.html'));</script>
 </body>
-
-<!--FOOTER IS HERE-->
-<footer>
-    <p>&copy; Copyright 2019<a href="#top">Top</a></p>
-</footer>
-
 </html>
