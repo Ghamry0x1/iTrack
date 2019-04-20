@@ -20,12 +20,13 @@ body{
 }
 
 .content-box{
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 10%;
     padding-bottom: 5%;
     background-color: white;
+
 }
 .content{
     display: flex; 
@@ -78,7 +79,6 @@ img{
 .social-container {
     margin: 20px 0;
     text-align: center;
-
 }
 .social-container a {
 	border: 1px solid #DDDDDD;
@@ -88,5 +88,8 @@ img{
 	align-items: center;
 	margin: 0 5px;
 	height: 40px;
-	width: 40px;
+    width: 40px;
+    text-decoration: none;
+
+    
 }
