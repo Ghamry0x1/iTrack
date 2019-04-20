@@ -23,7 +23,7 @@ h6 {
 
 h2 {
     font-size: 1.75rem;
-    margin: 2.5rem 0 0.5rem 0;
+    margin: 1rem 0 0.5rem 0;
 }
 
 body {
@@ -40,36 +40,54 @@ h3 {
     font-size: 30px;
 }
 
+.first-block {
+    height: 400px;
+}
+
+.body-left-box {
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    height: 350px;
+    width: 40%;
+}
+
+.body-left-title {
+    border-bottom: 1px solid black;
+}
+
+.body-right-box {
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    float: left;
+    width: 40%;
+    height: 350px;
+}
+
 .top-block {
     color: white;
-    /*background-image: url(../img/bg.jpg);*/
-    background-color: #FF4B2B;
-    background-attachment: fixed;
-    background-position: center;
-    position: relative;
-    padding: 4rem 0 2rem 0;
+    background-image: url(../img/bg.jpg);
+    /*background-color: #FF4B2B;*/
+    padding: 4rem 0 1rem 0;
+    height: 250px;
 }
 
 .top-block p {
     text-transform: uppercase;
-    font-size: .80rem;
+    font-size: .7rem;
     font-weight: 500;
-    padding: 1rem 0 0 0;
+    padding: 1.25rem 0 0 0;
     letter-spacing: .25rem;
-    color: #cfc8c8;
+    color: white;
 }
 
-.top-block p:after {
-    content: '';
-    position: absolute;
-    margin: auto;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    top: 0;
+.block-line {
     width: 50%;
+    color: grey;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .get-started-button {
@@ -84,45 +102,8 @@ h3 {
     font-size: 18px;
 }
 
-.body-left-box {
-    position: relative;
-    margin: 1%;
-    padding: 2%;
-    float: left;
-    width: 30%;
-    /*border: 1px solid black;*/
-}
-
-
-/*.body-left-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    box-shadow: 0px 20px 20px 7px #E3E7EB;
-   mix-blend-mode: multiply;
-}*/
-
-.body-left-title {
-    border-bottom: 1px solid black;
-}
-
-.body-right-box {
-    position: relative;
-    padding-left: 5%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    margin-bottom: 3%;
-    margin-top: 3%;
-    float: left;
-    width: 50%;
-}
-
 .features {
-    margin: 5%;
-    padding: 5%;
+    padding: 2%;
     text-align: center;
 }
 
@@ -134,10 +115,11 @@ h3 {
 
 .features-box {
     /*box-sizing: border-box;*/
+    float: left;
     position: relative;
+    height: 250px;
     margin: 2%;
     padding: 2%;
-    float: left;
     width: 20%;
     text-align: center;
     border: 10px solid white;
@@ -164,17 +146,6 @@ footer {
     width: 100%;
 }
 
-.features-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    box-shadow: 0px 20px 20px 7px #E3E7EB;
-    mix-blend-mode: multiply;
-}
-
 .bottom-box-pricing-list {
     margin-left: 10%;
     margin-right: 10%;
@@ -186,11 +157,12 @@ footer {
 
 .pricing-box {
     /*box-sizing: border-box;*/
+    float: left;
     position: relative;
     margin-left: 2%;
     margin-right: 2%;
     padding: 6%;
-    float: left;
+    height: 200px;
     width: 30%;
     text-align: center;
     border: 10px solid white;
